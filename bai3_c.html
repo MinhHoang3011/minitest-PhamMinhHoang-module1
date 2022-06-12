@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Nhập a: </th>
+        <td><input type="number" id="a"></td>
+    </tr>
+    <th>Nhập b: </th>
+    <td>
+        <input type="number" id="b"></td>
+    </tr>
+    <td><button onclick="demo()">check</button></td>
+    </tr>
+    <tr>
+        <td>
+            <p id="ketqua"></p>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let sum = 0;
+        if (a > b) {
+            alert("Số a phải nhỏ hơn b")
+        }else
+       for (let i = a ; i <= b ; i++){
+           document.getElementById("ketqua").innerHTML= sum + i;
+       }
+    }
+//    bài này bị sai mà e chưa tìm ra cách sửa ạ
+</script>
+</html>

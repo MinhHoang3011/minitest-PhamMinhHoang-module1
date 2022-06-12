@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Câu lệnh nào nhận vào giá trị từ 1 ô input. Viết code nhận a và b từ 2 ô input và hiển thị S = a*b ra thẻ h1.-->
+<body>
+<table>
+    <tr>
+        <th>Nhập số a</th>
+        <td>
+            <input type="text" id="a">
+        </td>
+    </tr>
+        <th>Nhập số b</th>
+        <td>
+            <input type="text" id="b">
+        </td>
+</table>
+<button onclick="demo()">Kết Quả</button>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        s = a * b
+        document.write("<h1>" + "S = a * b = " + s + "</h1>" )
+    }
+</script>
+</body>
+</html>

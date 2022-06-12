@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nhập vào a, hiển thị ra chu vi và diện tích và hình vuông độ dài cạnh a-->
+Cạnh :
+<input type="number" id="a"/>
+<button onclick="demo()">check</button>
+<p id="ketqua"></p>
+<script>
+    function demo() {
+        let a = document.getElementById("a").value;
+        let chuvi = a * 4;
+        let dientich = a * a;
+        if (a < 0) {
+            alert("Nhập lại !!! ")
+        } else {
+            document.getElementById("ketqua").innerHTML = "Chu vi hình vuông = " + chuvi + " Đơn vị" + "<br>"+" Diện tích hình vuông = " + dientich + " Đơn vị";
+        }
+    }
+</script>
+</body>
+</html>

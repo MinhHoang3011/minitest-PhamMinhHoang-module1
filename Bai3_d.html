@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<!--Nhập vào a là năm, in ra thế kỷ.-->
+<body>
+</ul>
+<button onclick="centuryCount()">check</button>
+<p id="ket-qua"></p>
+<script>
+  function centuryCount()
+  {
+    let ketQua = prompt("Nhập năm bất kì !!!");
+    if(ketQua != null) {
+      document.getElementById("ket-qua").innerHTML =
+              "Năm " + ketQua + " thuộc thế kỉ " + Math.ceil(ketQua / 100);
+    }
+  }
+</script>
+</body>
+</html>
